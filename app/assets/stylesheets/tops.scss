@@ -1,0 +1,49 @@
+// Place all the styles related to the tops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+  width: 100%;
+  background-color: #2f4f4f;
+}
+
+header ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+header ul a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+header li {
+  color: #fff;
+  
+}
+
+.weblog_img {
+  height: 100%;
+  width:100%;
+}
+
+footer {
+  width: 100%;
+  background-color:#2f4f4f;
+  padding: 20px 0 10px 0;
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+}

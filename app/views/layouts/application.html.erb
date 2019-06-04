@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weblog</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <header>
+        <%= image_tag 'weblog.jpg', class:'weblog_img' %>
+    <ul>
+      <li><a href="#">Weblog</a></li>
+      <li>アプリの説明文</li>
+    </ul>
+
+  </header>
+
+    <%= yield %>
+    <br><br>
+    <footer>
+    <p>運営会社DIVE INTO CODE株式会社<br>
+    © 2015-2016 Copyright DIVE INTO CODE Corp.</p>
+    </footer>
+
+  </body>
+</html>

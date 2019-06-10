@@ -10,6 +10,7 @@
 
 <div class="container">
   <div class="row">
+
     <div class="col-md-6 title">タイトル:<%= blog.title %><br>内容:<%= blog.content %><br>
     <%= link_to '詳細を確認する', blog_path(blog.id) %>
     <%= link_to "ブログを編集する", edit_blog_path(blog.id) %>
@@ -19,7 +20,8 @@
   <div class="col-md-12 topic">
         <%= link_to '新しくブログを投稿する', new_blog_path %>
   </div>
-    </div>
+
+  </div>
   </div>
   </div>
 </article>

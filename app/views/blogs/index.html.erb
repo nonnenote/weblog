@@ -1,4 +1,4 @@
-<div class="container">
+
 
 <header class="header">ブログ一覧</header>
 <p><%= notice %></p>
@@ -7,18 +7,19 @@
 
  <div class="contents">
 <% @blogs.each do |blog| %>
-  <div>
-    <div class="title">タイトル:<%= blog.title %><br>内容:<%= blog.content %><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 title">タイトル:<%= blog.title %><br>内容:<%= blog.content %><br>
     <%= link_to '詳細を確認する', blog_path(blog.id) %>
     <%= link_to "ブログを編集する", edit_blog_path(blog.id) %>
     <%= link_to 'ブログを削除する', blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %></div>
+
 <% end %>
-  </div>
-  </div>
-  <br>
-  <div class="topic">
+  <div class="col-md-12 topic">
         <%= link_to '新しくブログを投稿する', new_blog_path %>
   </div>
-
+    </div>
+  </div>
+  </div>
 </article>
-</div>

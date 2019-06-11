@@ -19,8 +19,7 @@
     <%= form.label :content %>
     <%= form.text_field :content %>
   </div><br>
-    <button type="button" class="btn btn-default"><%= form.submit %></button>
-
+    <%= form.submit class: 'btn btn-primary' %>
 <% end %>
 <br>
-<%= link_to "ブログ一覧画面にもどる", blogs_path %>
+<p><%= link_to "ブログ一覧画面にもどる", blogs_path %></p>
